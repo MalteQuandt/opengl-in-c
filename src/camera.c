@@ -1,7 +1,5 @@
 #include <camera.h>
 
-
-
 Camera_t * camera_init(vec3 pos, vec3 up, float yaw, float pitch, int * error) {
     Camera_t * buffer = (struct camera_t*) malloc(sizeof(Camera_t));
     if(buffer == NULL) {
