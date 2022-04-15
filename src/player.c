@@ -17,7 +17,7 @@ void player_setView(Player_t * player, mat4 view) {
     memcpy(player->view, view, sizeof(mat4));
 }
 vec3* player_getPositon(Player_t * player) {
-    return player->camera->pos;
+    return &player->camera->pos;
 }
 void player_setModel(Player_t * player, mat4 model) {
     memcpy(player->model, model, sizeof(mat4));

@@ -26,8 +26,7 @@ int entity_appendEntity(Entity_t * head, Player_t * ent) {
         while(tmp->next != NULL) {
             tmp = tmp->next;
         }
-        int * error;
-        tmp->next = entity_init(ent, error);
+        tmp->next = entity_init(ent, (int*){0});
         return SUCCESS;
     }
 }
